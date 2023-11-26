@@ -8,10 +8,8 @@ var climbStairs = function (n) {
 
   for (i = 2; i <= n; i++) {
     res.push(res[i - 1] + res[i - 2]);
-    console.log(res);
-    console.log(i, "---", res[i - 1] + res[i - 2]);
+    // console.log(i, "---", res[i - 1] + res[i - 2]);
   }
-  console.log(res);
   return res[n];
 };
 
