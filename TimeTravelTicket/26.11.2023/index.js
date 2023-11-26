@@ -28,4 +28,20 @@ const fib = (n) => {
   }
 };
 
-console.log(fib(10));
+// console.log(fib(10));
+
+// *===============
+// *1137. N-th Tribonacci Number
+
+// https://leetcode.com/problems/n-th-tribonacci-number/?envType=study-plan-v2&envId=dynamic-programming
+const cache = [0, 1, 1];
+
+var tribonacci = function (n) {
+  console.log(cache);
+  if (cache[n] === undefined) {
+    cache[n] = tribonacci(n - 3) + tribonacci(n - 2) + tribonacci(n - 1);
+  }
+  return cache[n];
+};
+
+// console.log(tribonacci(25));
