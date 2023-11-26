@@ -45,3 +45,19 @@ var tribonacci = function (n) {
 };
 
 // console.log(tribonacci(25));
+
+// *===============
+// *198. House Robber
+
+// https://leetcode.com/problems/house-robber/submissions/?envType=study-plan-v2&envId=dynamic-programming
+const rob = (nums = []) => {
+  let a = nums[0];
+  let b = nums[1] ?? 0;
+  let c = a + (nums[2] ?? 0);
+  for (let i = 3; i < nums.length; i++) {
+    [a, b, c] = [b, c, Math.max(a, b) + nums[i]];
+  }
+  return Math.max(b, c);
+};
+
+console.log(rob([1, 3, 1]));
