@@ -14,3 +14,26 @@ var climbStairs = function (n) {
 };
 
 // console.log(climbStairs(10));
+
+// *===============
+// *509. Fibonacci Number
+
+// https://leetcode.com/problems/fibonacci-number/
+
+const fib = (n) => {
+  const Fibonacci = (f) => {
+    console.log(f);
+  };
+  if (n == 1) {
+    console.log(n);
+  } else {
+    Fibonacci(n);
+  }
+};
+
+fib(1);
+// 10 = 10-1 = 9 = 8 + 7 = 15
+// 10 = 10-2 = 8 = 7 + 6 = 13
+
+// 4 = 3
+// 3 = 2
