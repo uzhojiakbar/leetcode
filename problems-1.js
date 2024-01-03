@@ -139,3 +139,77 @@
 // reverseVowels("salom");
 // reverseVowels(".a");
 // reverseVowels("a.");
+
+// var fibGenerator = function* () {
+//   arr = [0, 1, 1];
+//   n = 0;
+//   while (1) {
+//     if (n == 0) {
+//       yield arr[0];
+//       n++;
+//     } else if (n == 1) {
+//       yield arr[n];
+//       n++;
+//     } else if (n == 2) {
+//       yield arr[n];
+//       n++;
+//     } else {
+//       arr[n] = arr[n - 1] + arr[n - 2];
+//       yield arr[n];
+//       n++;
+//     }
+//   }
+// };
+
+// a = fibGenerator();
+
+// let arr = [];
+// for (let i = 1; i <= 10; i++) {
+//   arr.push(a.next().value);
+// }
+// console.log(arr);
+
+// var arr = [0, 1, 1];
+
+// var fibGenerator = function* (n = -1) {
+//   n++;
+//   while (1) {
+//     if (n == 0) {
+//       yield arr[0];
+//       n++;
+//     } else if (n == 1) {
+//       yield arr[n];
+//       n++;
+//     } else if (n == 2) {
+//       yield arr[n];
+//       n++;
+//     } else {
+//       arr[n] = arr[n - 1] + arr[n - 2];
+//       yield arr[n];
+//       n++;
+//     }
+//   }
+//   yield fibGenerator(n);
+// };
+
+// a = fibGenerator();
+
+// let arr2 = [];
+// for (let i = 1; i <= 10; i++) {
+//   arr2.push(a.next().value);
+// }
+// console.log(arr2);
+
+// var removeDuplicates = function (nums) {
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//       if (nums[i] == nums[j]) {
+//         nums.splice(j, 1);
+//         j--;
+//       }
+//     }
+//   }
+//   return nums.length;
+// };
+
+// console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
